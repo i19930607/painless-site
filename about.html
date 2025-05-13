@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>關於我們｜粉趨勢數位整合行銷</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .hero-about {
+  background: url('../images/about-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: #000;
+}
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background: #f9f9f9;
+      color: #000;
+    }
+
+    .navbar {
+      background: #002e5b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-toggle {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #0e2b55;
+      min-width: 200px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      z-index: 999;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      font-size: 15px;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #163a70;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .hero-section {
+      background-image: url('../images/bg-about.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      padding: 100px 20px 40px;
+      text-align: center;
+    }
+
+    .hero-about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 0 #fff;
+  margin-bottom: 40px;
+}
+
+    .hero-section p {
+      font-size: 30px;
+      color: black;
+      text-shadow: 1px 1px 0 #fff;
+      margin-top: 0;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+    }
+
+    .content h2 {
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    .content ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #002e5b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.grid-title {
+  max-width: 900px;
+  margin: 50px auto 20px;
+  padding: 0 20px;
+}
+
+.grid-title h2 {
+  text-align: left;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.grid-item {
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 顏色區塊定義 */
+.orange { background: #f1852f; }
+.gray   { background: #999999; }
+.yellow { background: #f6c73b; }
+.blue   { background: #4176c3; }
+.green  { background: #6aac3c; }
+.brown  { background: #b47d2f; }
+
+.grid-item:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="../index.html" class="logo">粉趨勢數位整合行銷</a>
+        <div class="nav-links">
+          <a href="about.html">關於我們</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">作品案例</a>
+            <div class="dropdown-menu">
+              <a href="cases/social.html">社群經營外包</a>
+              <a href="cases/custom.html">客製行銷方案</a>
+              <a href="cases/influencer.html">KOL/KOC/網紅媒合</a>
+              <a href="cases/event.html">線下實體活動</a>
+              <a href="cases/video.html">影片拍攝案例</a>
+            </div>
+          </div>
+          <a href="contact.html">聯絡我們</a>
+        </div>
+      </div>
+  
+  <section class="hero-about">
+    <h1>關於粉趨勢行銷</h1>
+    <p>專業 × 整合 × 效果 × 信任</p>
+  </section>
+
+  <section class="content">
+    <h2>品牌介紹</h2>
+    <p>
+      粉趨勢行銷成立於 2015 年 12 月，團隊成員皆為重度網路使用者與業界資深從業人員，
+      擁有平均十年以上操作經驗，擅長結合策略、創意、內容與數據，打造具有「實效」與「溝通力」的整合行銷服務。
+    </p>
+    <p>
+      無論是品牌起步、轉型優化、行銷導流、互動操作，粉趨勢都能量身打造最適合的專案方案。
+      我們懂中小企業，也懂預算的壓力，透過有效排程與模組設計，讓每一分投入都產生價值。
+    </p>
+
+    <h2>主要服務</h2>
+    <ul>
+      <li>社群行銷與代操（Facebook／Instagram／Threads／LINE）</li>
+      <li>KOL／KOC 影響力媒合與置入</li>
+      <li>整合行銷企劃與活動規劃執行</li>
+      <li>數位廣告策略與投放</li>
+      <li>短影音腳本／拍攝／剪輯與宣傳</li>
+      <li>官網／電商頁面／品牌文案設計</li>
+    </ul>
+
+    <h2>選擇我們的理由</h2>
+    <ul>
+      <li> 團隊經驗豐富，熟悉多元產業需求</li>
+      <li> 提供彈性合作方式與可執行建議</li>
+      <li> 高效整合內容與廣告、口碑、設計等資源</li>
+      <li> 以成果為導向，追求每次行銷最大效益</li>
+    </ul>
+  </section>
+
+  <div class="grid-title">
+    <h2>粉趨勢提供的行銷標的</h2>
+  </div>
+  <div class="service-grid">
+    <div class="grid-item orange">社群操作</div>
+    <div class="grid-item gray">高質感圖文</div>
+    <div class="grid-item yellow">活動規劃</div>
+    <div class="grid-item blue">網紅曝光</div>
+    <div class="grid-item green">口碑行銷</div>
+    <div class="grid-item orange">開箱試用</div>
+    <div class="grid-item gray">團媽勸敗</div>
+    <div class="grid-item brown">論壇社團置入</div>
+    <div class="grid-item blue">影片製作</div>
+  </div>
+
+  <footer>
+    <p>© 2025 粉趨勢數位整合行銷有限公司 All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>客製行銷方案｜粉趨勢數位整合行銷</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #0e2b55; /* 深藍底 */
+  min-width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  color: white;              /* 白字 */
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #163a70; /* hover 時更深藍 */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+    .navbar {
+      background: #002e5b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo-wall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.logo-wall .logo-item {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.logo-wall .logo-item:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.logo-wall .logo-item::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.logo-wall .logo-item:hover::after {
+  opacity: 1;
+}
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero-section {
+  background-image: url('../images/bg-custom.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 0.5px 20px 50px;
+  text-align: center;
+}
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: black;
+      text-shadow: 1px 1px 0 #fff;
+    }
+
+    .hero-section p {
+      font-size: 20px;
+      color: black;
+      text-shadow: 1px 1px 0 #fff;
+    }
+
+    .logo-wall {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1100px;
+      margin: 40px auto 0;
+    }
+
+    .logo-wall img {
+      height: 60px;
+      max-width: 120px;
+      object-fit: contain;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.15));
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: #002e5b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="../index.html" class="logo">粉趨勢數位整合行銷</a>
+        <div class="nav-links">
+          <a href="../about.html">關於我們</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">作品案例</a>
+            <div class="dropdown-menu">
+                <a href="/cases/social.html">社群經營外包</a>
+                <a href="/cases/custom.html">客製行銷方案</a>
+                <a href="/cases/influencer.html">KOL/KOC/網紅媒合</a>
+                <a href="/cases/event.html">線下實體活動</a>
+                <a href="/cases/video.html">影片拍攝案例</a>
+            </div>
+          </div>
+          <a href="../contact.html">聯絡我們</a>
+        </div>
+      </div>
+
+  <section class="hero-section">
+    <h1>客製行銷方案</h1>
+    <p>量身打造，為你的品牌找出最佳曝光解方</p>
+
+    <div class="logo-wall">
+        <div class="logo-item" data-name="樂事"><img src="../images/1.png" alt="Logo 1" /></div>
+        <div class="logo-item" data-name="Garmin"><img src="../images/2.png" alt="Logo 2" /></div>
+        <div class="logo-item" data-name="多力多滋"><img src="../images/3.png" alt="Logo 3" /></div>
+        <div class="logo-item" data-name="Samsung"><img src="../images/4.png" alt="Logo 4" /></div>
+        <div class="logo-item" data-name="三菱"><img src="../images/5.png" alt="Logo 5" /></div>
+        <div class="logo-item" data-name="ASUS"><img src="../images/6.png" alt="Logo 6" /></div>
+        <div class="logo-item" data-name="萊爾富"><img src="../images/7.png" alt="Logo 7" /></div>
+        <div class="logo-item" data-name="橘子工坊"><img src="../images/8.png" alt="Logo 8" /></div>
+        <div class="logo-item" data-name="Emoving"><img src="../images/9.png" alt="Logo 9" /></div>
+        <div class="logo-item" data-name="中華郵政"><img src="../images/10.png" alt="Logo 10" /></div>
+        <div class="logo-item" data-name="LEGERE 蘭吉兒"><img src="../images/11.png" alt="Logo 11" /></div>
+        <div class="logo-item" data-name="五月花"><img src="../images/12.png" alt="Logo 12" /></div>
+        <div class="logo-item" data-name="德恩堂眼鏡"><img src="../images/13.png" alt="Logo 13" /></div>
+        <div class="logo-item" data-name="國泰金控"><img src="../images/14.png" alt="Logo 14" /></div>
+        <div class="logo-item" data-name="屈臣氏"><img src="../images/15.png" alt="Logo 15" /></div>
+        <div class="logo-item" data-name="一留"><img src="../images/16.png" alt="Logo 16" /></div>
+        <div class="logo-item" data-name="交通部高速公路局"><img src="../images/17.png" alt="Logo 17" /></div>
+        <div class="logo-item" data-name="KOSE"><img src="../images/18.png" alt="Logo 18" /></div>
+        <div class="logo-item" data-name="meiji"><img src="../images/19.png" alt="Logo 19" /></div>
+        <div class="logo-item" data-name="Calvin Klein"><img src="../images/20.png" alt="Logo 20" /></div>
+        <div class="logo-item" data-name="南臺科技大學"><img src="../images/21.png" alt="Logo 21" /></div>
+        <div class="logo-item" data-name="稻江護家"><img src="../images/22.png" alt="Logo 22" /></div>
+        <div class="logo-item" data-name="Timberland"><img src="../images/23.png" alt="Logo 23" /></div>
+      </div>
+  </section>
+
+  <section class="content">
+    <h2>服務說明</h2>
+    <p>
+      沒有萬用的行銷公式，只有適合你的解法。粉趨勢專為各企業與新創品牌量身打造「客製行銷方案」，我們從品牌訪談、產業研究、競品盤點開始，協助找出你真正需要被解決的行銷問題。
+    </p>
+    <p>
+      我們協助規劃的不只是「曝光活動」，而是從整體行銷資源與人力出發，設計一條能執行、看得懂、看得見成果的推廣路徑。你可以依需求選擇以下模組：
+    </p>
+    <ul>
+      <li>整合 Facebook／Instagram／Threads 的社群內容設計</li>
+      <li>品牌文案發想調整</li>
+      <li>KOL／KOC媒合與合作</li>
+      <li>口碑行銷與論壇操作</li>
+      <li>LINE OA 自動化與銷售流程建置</li>
+      <li>EDM 電子報設計與投遞策略</li>
+      <li>活動型網站與 SEO 文案架構規劃</li>
+      <li>電商促購頁面與客戶名單蒐集機制設計</li>
+      <li>長／短影音腳本企劃與拍攝剪輯</li>
+    </ul>
+    <p>
+      我們也提供定期顧問／每月回顧會議機制，協助團隊內部逐步接手執行，讓你不只是委外代操，更能逐步建立起「行銷內化能力」。
+    </p>
+  
+    <h3>適合對象：</h3>
+    <ul>
+      <li>▸ 成立不到三年的品牌，希望盡快建立曝光系統與信任感</li>
+      <li>▸ 曾找過設計師／行銷公司，卻對成果與配合流程不滿意者</li>
+      <li>▸ 希望串聯網站／社群／LINE／影音的業主與電商經營者</li>
+      <li>▸ 品牌團隊只有 1～2 人，希望借力行銷專家補足戰力的你</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 粉趨勢數位整合行銷有限公司 All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
